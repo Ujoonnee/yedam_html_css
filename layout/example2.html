@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container, header, section, aside, footer {
+            box-sizing: border-box;
+            border: 1px solid grey;
+            padding: 2%;
+            margin: 2%;
+        }
+        section {
+            float: left;
+            width: 58%;
+            /* margin-bottom: 4%; */
+        }
+        aside#left {    
+            float: left;
+            width: 15%;
+        }
+        aside#right {
+            float: right;
+            width: 15%;
+        }
+        div {
+            overflow: hidden;
+            clear: both;
+        }
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="#container">
+        <header>
+            <h1>3-Column Layout</h1>
+        </header>
+        <div>
+            <aside id="left">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>Dolor</li>
+                </ul>
+            </aside>
+            <section>
+                <h3>Content</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, doloribus! Inventore, perspiciatis cum voluptatum culpa fugiat amet quis doloremque! Impedit optio enim id voluptas exercitationem nisi numquam odio possimus quos! <br><br> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quis nesciunt magni incidunt enim debitis unde earum, molestias dolor tempora amet, aperiam ad reprehenderit dolore, delectus quas totam nemo vel!
+            </section>
+            <aside id="right">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>Dolor</li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            Copyright
+        </footer>
+    </div>
+</body>
+</html>

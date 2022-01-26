@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <style>
+        * {
+            /* border: 1px solid crimson; */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            border: none;
+        }
+        
+        #container {
+            padding: 2%;
+        }
+        #header {
+            background: lightgreen;
+            height: 100px;
+        }
+        #header>h1 {
+            margin: 10px 0;
+            text-align: center;
+        }
+        #header>ul>li {
+            list-style-type: none;
+            float: left;
+            width: calc((25%-20px));
+            margin: 0 10px;
+            text-align: center;
+            border-left: 1px solid;
+            border-right: 1px solid;
+        }
+
+        #sidebar {
+            clear: left;
+            float: left;
+            border: 1px solid;
+            margin-top: 5%;
+            
+            width: 200px;
+            height: 500px;
+            background-image: url('../images/top.jpg');
+        }
+
+        #board {
+            float: left;
+            width: calc(95% - 200px);
+            padding: 5%;
+        }
+        #board>header>h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        table,
+        th,
+        td {
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 10pt;
+        }
+
+        table {
+            border: 1px solid grey;
+            border-left: none;
+            border-right: none;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background-color: lightgrey;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        td {
+            border-top: 1px solid lightgrey;
+        }
+
+        td:nth-of-type(2) {
+            text-align: left;
+        }
+
+        main>div,
+        footer>div {
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Home</h1>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+        </div>
+        <div id="sidebar">
+    
+        </div>  
+        <div id="board">
+            <header>
+                <h3>게시판 Title</h3>
+            </header>
+            <main>
+                <table>
+                    <colgroup>
+                        <col>
+                        <col style="width: 50%;">
+    
+                    </colgroup>
+                    <tr>
+                        <th>No</th>
+                        <th>제목</th>
+                        <th>작성일</th>
+                        <th>작성자</th>
+                        <th>조회수</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>제목</td>
+                        <td>2022.01.25</td>
+                        <td>김자바</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>제목</td>
+                        <td>2022.01.25</td>
+                        <td>김자바</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>제목</td>
+                        <td>2022.01.25</td>
+                        <td>김자바</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>제목</td>
+                        <td>2022.01.25</td>
+                        <td>김자바</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+    
+                <div>
+                    <span>◀</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>▶</span>
+                </div>
+            </main>
+            <footer>
+                <div>
+                    <select>
+                        <option value="totla">제목+내용</option>
+                        <option value="title">제목</option>
+                        <option value="content">내용</option>
+                    </select>
+                    <input type="text">
+                    <input type="button" value="검색">
+                </div>
+            </footer>
+        </div>
+    </div>
+  
+</body>
+
+</html>
